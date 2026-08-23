@@ -26,7 +26,9 @@ void CanBo::taoThongtin() {
 }
 
 void CanBo::nhap(){
+    Date::nhap();
     cout << "Nhap ma can bo: ";
+    cin.ignore();
     getline(cin, ma_canbo);
     cout << "Nhap ten can bo: ";
     getline(cin, ten_canbo);
