@@ -1,4 +1,4 @@
-#pragma one
+#pragma once
 class Date{
     private:
         int day;
