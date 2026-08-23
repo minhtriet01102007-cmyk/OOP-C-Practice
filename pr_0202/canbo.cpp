@@ -37,6 +37,7 @@ void CanBo::nhap(){
 }
 
 void CanBo::xuat() const{
+    Date::xuat();
     cout << "Ma can bo: " << ma_canbo << endl;
     cout << "Ten can bo: " << ten_canbo << endl;
     cout << "Tien phu cap: " << tien_phu_cap << endl;
