@@ -3,18 +3,24 @@
 #include <string>
 using namespace std;
 
-class Maytinh : public Hanghoa{
-    private:
-        string nha_sx;
-        int nam_sx;
-        double gia_banny;
-        static double tyle_km;
-    public:
-        Maytinh();
-        Maytinh(string ma_hang, string ten_hang, string nha_sx, int nam_sx, double gia_banny);
-        void tao_thongtin();
-        void nhap();
-        void xuat() const;
-        void tinhGB_real() const;
-        void getGB_real() const;
+class Maytinh : public Hanghoa {
+private:
+    string nhaSanXuat;
+    int namSanXuat;
+    double giaBanNiemYet;
+
+    static double tyLeKhuyenMai;
+
+public:
+    Maytinh();
+    Maytinh(string maHang, string tenHang,
+            string nhaSanXuat, int namSanXuat,
+            double giaBanNiemYet);
+
+    void nhap();
+    void xuat() const;
+    double giaBanThucTe() const;
+    string getNhaSanXuat() const;
+    static void setTyLeKhuyenMai(double tyLe);
+    static double getTyLeKhuyenMai();
 };
