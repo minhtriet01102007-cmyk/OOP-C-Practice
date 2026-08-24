@@ -3,12 +3,15 @@
 using namespace std;
 
 class Hanghoa{
-    private:
-        string ma_hang;
-        string ten_hang;
-    public:
-        Hanghoa();
-        Hanghoa(string ma_hang, string ten_hang);
-        void nhap();
-        void xuat() const;
+private:
+    string maHang;
+    string tenHang;
+public:
+    Hanghoa();
+    Hanghoa(string maHang, string tenHang);
+    void nhap();
+    void xuat() const;
+    string getMaHang() const;
+    string getTenHang() const;
 };
+
