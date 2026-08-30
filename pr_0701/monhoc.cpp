@@ -16,7 +16,6 @@ MonHoc::MonHoc(string MaMH, string TenMH, double DTB, int soTC){
     this->soTC = soTC;
 }
 MonHoc::~MonHoc(){}
-
 void MonHoc::nhap(){
     cout << "Nhap ma mon hoc: ";
     getline(cin, MaMH);
@@ -39,4 +38,7 @@ int MonHoc::getTC() const{
 }
 void MonHoc::setTC(int soTC){
     this->soTC = soTC;
+}
+double MonHoc::getDTB() const{
+    return DTB; 
 }
