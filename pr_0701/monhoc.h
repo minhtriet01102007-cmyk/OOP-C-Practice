@@ -15,4 +15,5 @@ class MonHoc{
         void xuat() const;
         int getTC() const;
         void setTC(int soTC);
+        double getDTB() const;
 };
