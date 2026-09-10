@@ -15,7 +15,7 @@ int main(){
     s.push(10);
     std::cout << "Kiem tra isEmpty(): " << (s.isEmpty() ? "True" : "False") << std::endl; 
     std::cout << "So phan tu: " << s.numOfElement() << std::endl; 
-    s.print(); 
+    s.print();
 
     // Thử nghiệm khi stack có 2 phần tử
     std::cout << "Them phan tu thu 2 (20)" << std::endl;
