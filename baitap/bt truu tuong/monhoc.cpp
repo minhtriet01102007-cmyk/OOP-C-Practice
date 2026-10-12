@@ -24,7 +24,7 @@ void MonHoc::nhap(){
     } while (true);
 
     do{
-        cout << "Nhap diem (0-10): ";
+        cout << "Nhap diem (0-10): " ;
         cin >> diem;
 
         if (cin.fail()){
@@ -40,6 +40,7 @@ void MonHoc::nhap(){
             break;
         }
     } while (true);
+    cin.ignore(1000, '\n');
 }
 void MonHoc::xuat() const{
     cout << "Ten mon: " << tenmon << " | Tin chi: " << tinchi << " | Diem: " << diem << '\n';

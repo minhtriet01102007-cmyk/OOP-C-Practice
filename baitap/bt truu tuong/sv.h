@@ -11,11 +11,11 @@ class SV{
         string Name;
         double DRL;
         vector<MonHoc> dsMon;
+
     public:
-        SV();
         virtual ~SV();
-        virtual double GPA() = 0;
-        virtual bool XHB() = 0;
+        virtual double GPA() const = 0;
+        virtual bool XHB() const = 0;
         virtual void nhap();
         virtual void show();
         string getMSSV() const;
@@ -30,3 +30,4 @@ class SV{
         friend istream& operator>>(istream& in, SV& sv);
         friend ostream& operator<<(ostream& out, const SV& sv);
 };
+

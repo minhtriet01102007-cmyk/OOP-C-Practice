@@ -1,10 +1,9 @@
 #pragma once
 #include "sv.h"
 
-class SVIT : public SV {
+class SVIT : public SV{
     public:
-        double GPA() override;
-        bool XHB() override;
-        void nhap() override;
-        void show() override;
+        ~SVIT() override;
+        double GPA() const override;
+        bool XHB() const override;
 };

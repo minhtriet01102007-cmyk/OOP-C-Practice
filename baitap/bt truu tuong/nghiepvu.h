@@ -1,21 +1,20 @@
+
 #pragma once
-#include "svit.h"
-#include "svck.h"
+#include "sv.h"
 
 class NghiepVu {
     private:
         SV** ds;
         int n;
         int capacity;
-        void moRong();
+        void tangCapacity();
     public:
-        NghiepVu();
+        NghiepVu(int capacity = 10);
         ~NghiepVu();
-        void themSV();
-        void hienThiDS();
-        void timSV();
-        void suaSV();
-        void xoaSV();
-        void hienThiHocBong();
-        void sapXepGPA();
+        void them(SV* sv);
+        bool xoa(const string& mssv);
+        SV* timKiem(const string& mssv) const;
+        void sapXepTheoGPA();
+        void showDanhSach() const;
+        int getSoLuong() const;
 };

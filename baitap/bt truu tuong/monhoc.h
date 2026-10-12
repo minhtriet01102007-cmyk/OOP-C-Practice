@@ -5,7 +5,7 @@ using namespace std;
 class MonHoc{
     private:
         string tenmon;
-        int tinchi;
+        double tinchi;
         double diem;
     public:
         void nhap();
