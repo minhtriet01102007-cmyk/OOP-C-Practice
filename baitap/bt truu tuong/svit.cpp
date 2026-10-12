@@ -2,22 +2,22 @@
 #include <iostream>
 using namespace std;
 
-SVIT::SVIT(){}
-SVIT::~SVIT(){}
 double SVIT::GPA(){
-    return (diemtoan + diemtin)/2;
+    return tinhGPA();
 }
 bool SVIT::XHB(){
-    if (GPA() > 3.2) return true;
-    else return false;
+    return GPA() >= 8.0 && DRL >= 80;
 }
-void SVIT::show(){
-    SV::show();
-    cout << "Diem toan: " << diemtoan << endl;
-    cout << "Diem tin: " << diemtin << endl;
-    cout << "GPA: " << GPA() << endl;
-    if (XHB())
-        cout << "Duoc hoc bong" << endl;
-    else
-        cout << "Khong duoc hoc bong" << endl;
+void SVIT::nhap(){
+    SV::nhap();
+}
+void SVIT::show() {
+    cout << "Loai sinh vien: Cong nghe thong tin\n";
+    cout << "MSSV: " << MSSV << '\n';
+    cout << "Ho ten: " << Name << '\n';
+    cout << "DRL: " << DRL << '\n';
+    showDanhSachMon();
+    cout << "Hoc bong: "
+         << (XHB() ? "Du dieu kien" : "Khong du dieu kien")
+         << '\n';
 }

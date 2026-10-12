@@ -1,0 +1,15 @@
+#pragma once
+#include <string>
+using namespace std;
+
+class MonHoc{
+    private:
+        string tenmon;
+        int tinchi;
+        double diem;
+    public:
+        void nhap();
+        void xuat() const;
+        int getTinChi() const;
+        double getDiem() const;
+};

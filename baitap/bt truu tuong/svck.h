@@ -1,16 +1,10 @@
 #pragma once
 #include "sv.h"
-#include <iostream>
-using namespace std;
 
-class SVCK : public SV{
-    private:
-        double diemve;
-        double diemchetao;
+class SVCK : public SV {
     public:
-        SVCK();
-        ~SVCK();
         double GPA() override;
         bool XHB() override;
+        void nhap() override;
         void show() override;
 };
