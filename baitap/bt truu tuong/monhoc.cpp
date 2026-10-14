@@ -1,4 +1,3 @@
-
 #include "monhoc.h"
 #include <iostream>
 using namespace std;
