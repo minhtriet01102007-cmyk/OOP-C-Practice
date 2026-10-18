@@ -1,7 +1,7 @@
 #pragma once
 #include "sv.h"
 
-class NghiepVu {
+class NghiepVu{
     private:
         SV** ds;
         int n;
