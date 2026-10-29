@@ -9,3 +9,12 @@ class Department{
         ~Department();
         friend ostream& operator<<(ostream&, const Department&);
 };
+Department::Department(string nameDep, Teacher* teacher) : nameDep(nameDep), teacher(teacher){
+}
+Department::~Department(){
+    delete this->teacher;
+}
+ostream& operator<<(ostream& out, const Department& department){
+    out << "Department: " << department.nameDep << ", Teacher: " << *department.teacher;
+    return out;
+}

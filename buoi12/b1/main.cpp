@@ -8,5 +8,6 @@ int main(){
     }
     cout << *teacher << endl;
     delete teacher;
+    system("pause");
     return 0;
 }
